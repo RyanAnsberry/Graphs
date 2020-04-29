@@ -11,3 +11,6 @@ class Graph:
         if v2 not in self.nodes:
             self.add_node(v2)
         self.nodes[v2].add(v1)
+
+    def get_neighbors(self, node):
+        return self.nodes[node]
